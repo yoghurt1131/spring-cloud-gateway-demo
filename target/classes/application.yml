@@ -15,6 +15,7 @@ spring:
             - StripPrefix=1
             - ParameterEnrichment
             - RequestLogging
+            - RemoveUserIdResponse
 
 logging:
   level:

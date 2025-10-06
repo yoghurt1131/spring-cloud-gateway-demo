@@ -195,20 +195,23 @@ mvn spring-boot:run
 
 ## テストコマンド
 
-### テストシナリオ1: 最小限のパラメータ（フィルターでパラメータ補完）
+### テストシナリオ1: 最小限のパラメータ（フィルターでパラメータ補完、userIdフィールド削除）
 ```bash
 curl "http://localhost:8080/gateway/user-info?userId=12345"
 ```
+※期待される結果: userIdフィールドがレスポンスから除去される
 
-### テストシナリオ2: 一部パラメータ指定（残りはフィルターで補完）
+### テストシナリオ2: 一部パラメータ指定（残りはフィルターで補完、userIdフィールド削除）
 ```bash
 curl "http://localhost:8080/gateway/user-info?userId=12345&userName=Alice"
 ```
+※期待される結果: userIdフィールドがレスポンスから除去される
 
-### テストシナリオ3: 直接バックエンド呼び出し（フィルター処理なし）
+### テストシナリオ3: 直接バックエンド呼び出し（フィルター処理なし、userIdフィールド残存）
 ```bash
 curl "http://localhost:8080/api/user-info?userId=12345"
 ```
+※期待される結果: userIdフィールドが残る
 
 ### 追加エンドポイント
 ```bash

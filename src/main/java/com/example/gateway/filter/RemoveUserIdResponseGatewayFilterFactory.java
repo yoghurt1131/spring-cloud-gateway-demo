@@ -25,14 +25,14 @@ import reactor.core.publisher.Mono;
  * @version 1.0.0
  */
 @Component
-public class RemoveUserIdResponseFilterFactory extends AbstractGatewayFilterFactory<RemoveUserIdResponseFilterFactory.Config> {
+public class RemoveUserIdResponseGatewayFilterFactory extends AbstractGatewayFilterFactory<RemoveUserIdResponseGatewayFilterFactory.Config> {
 
-    private static final Logger logger = LoggerFactory.getLogger(RemoveUserIdResponseFilterFactory.class);
+    private static final Logger logger = LoggerFactory.getLogger(RemoveUserIdResponseGatewayFilterFactory.class);
     
     private final ModifyResponseBodyGatewayFilterFactory modifyResponseBodyFilter;
     private final ObjectMapper objectMapper;
 
-    public RemoveUserIdResponseFilterFactory(ModifyResponseBodyGatewayFilterFactory modifyResponseBodyFilter) {
+    public RemoveUserIdResponseGatewayFilterFactory(ModifyResponseBodyGatewayFilterFactory modifyResponseBodyFilter) {
         super(Config.class);
         this.modifyResponseBodyFilter = modifyResponseBodyFilter;
         this.objectMapper = new ObjectMapper();

@@ -1,6 +1,7 @@
 /Users/ishin/work/claude/workspace/spring-cloud-gateway-demo/src/main/java/com/example/gateway/GatewayDemoApplication.java
 /Users/ishin/work/claude/workspace/spring-cloud-gateway-demo/src/main/java/com/example/gateway/config/RouterConfig.java
 /Users/ishin/work/claude/workspace/spring-cloud-gateway-demo/src/main/java/com/example/gateway/filter/ParameterEnrichmentGatewayFilterFactory.java
+/Users/ishin/work/claude/workspace/spring-cloud-gateway-demo/src/main/java/com/example/gateway/filter/RemoveUserIdResponseGatewayFilterFactory.java
 /Users/ishin/work/claude/workspace/spring-cloud-gateway-demo/src/main/java/com/example/gateway/filter/RequestLoggingGatewayFilterFactory.java
 /Users/ishin/work/claude/workspace/spring-cloud-gateway-demo/src/main/java/com/example/gateway/handler/UserInfoHandler.java
 /Users/ishin/work/claude/workspace/spring-cloud-gateway-demo/src/main/java/com/example/gateway/model/UserInfoResponse.java
