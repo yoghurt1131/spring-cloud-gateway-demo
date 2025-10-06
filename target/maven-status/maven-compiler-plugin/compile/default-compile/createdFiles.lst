@@ -1,0 +1,8 @@
+com/example/gateway/GatewayDemoApplication.class
+com/example/gateway/filter/RequestLoggingGatewayFilterFactory.class
+com/example/gateway/filter/RequestLoggingGatewayFilterFactory$Config.class
+com/example/gateway/filter/ParameterEnrichmentGatewayFilterFactory.class
+com/example/gateway/config/RouterConfig.class
+com/example/gateway/handler/UserInfoHandler.class
+com/example/gateway/model/UserInfoResponse.class
+com/example/gateway/filter/ParameterEnrichmentGatewayFilterFactory$Config.class
